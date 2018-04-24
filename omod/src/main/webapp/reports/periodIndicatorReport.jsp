@@ -173,6 +173,7 @@
 									<select id="cohortQueryField" name="cohortQuery">
 										<option value=""></option>
 										<c:forEach var="query" items="${cohortQueries}">
+											<c:url var="addFilterUrl" value="/module/reporting/widget/getMappedAsString.form">
 											<option value="${query.uuid}">${query.name}</option>
 										</c:forEach>
 									</select>
